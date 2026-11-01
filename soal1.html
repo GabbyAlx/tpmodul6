@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nim-niman</title>
+</head>
+<body>
+    <h2>Data Mahasiswa</h2>
+
+    <form>
+        <label>NIM:</label>
+        <input type="text" id="nim" readonly>
+        <br><br>
+        <label>Nama:</label>
+        <input type="text" id="nama" readonly>
+    </form>
+
+    <script>
+        let nim = prompt("Masukkan NIM:");
+        let nama = prompt("Masukkan Nama:");
+        
+        document.getElementById("nim").value = nim;
+        document.getElementById("nama").value = nama;
+    </script>
+
+</body>
+</html>

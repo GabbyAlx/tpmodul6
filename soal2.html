@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #kotak {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bermain dengan Warna</h2>
+    <button id="ungu">Ungu</button>
+    <button id="biru">Biru</button>
+    <button id="hijau">Hijau</button>
+    <br><br>
+    <button id="sembunyikan">Sembunyikan warna</button>
+    <button id="tampilkan">Tampilkan warna</button>
+    <div id="kotak"></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#ungu").click(function() {
+                $("#kotak").css("background-color", "purple");
+            });
+
+            $("#biru").click(function() {
+                $("#kotak").css("background-color", "blue");
+            });
+
+            $("#hijau").click(function() {
+                $("#kotak").css("background-color", "green");
+            });
+
+            $("#sembunyikan").click(function() {
+                $("#kotak").hide();
+            });
+
+            $("#tampilkan").click(function() {
+                $("#kotak").show();
+            });
+        });
+    </script>
+</body>
+</html>
